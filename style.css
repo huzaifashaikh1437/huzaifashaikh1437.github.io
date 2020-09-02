@@ -1,0 +1,515 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.scroll-color {
+  color: #DC143C !important;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+}
+
+.intro h2 {
+  font-size: 2rem;
+}
+
+.intro .name {
+  color: #DC143C;
+}
+
+.intro button {
+  border: none;
+  background: none;
+  border: 1px solid #fff;
+  font-size: 2rem;
+  height: 5rem;
+  width: 20rem;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.intro button a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.intro button .fa-arrow-right {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.intro button:hover {
+  background: #04c2c9;
+}
+
+.intro button:hover .fa-arrow-right {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  background-color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-color:#616161 !important;
+  color: #fff !important;
+  font-size: 2.5rem;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: lightgreen;
+}
+
+.navbar-nav a {
+  font-size: 1.5rem !important;
+  letter-spacing: 0.2rem;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  margin-top: .2rem;
+  color: #fff !important;
+}
+
+.navbar-nav a:hover {
+  color: #DC143C !important;
+}
+
+.self {
+  margin-top: 15rem;
+}
+
+.about-heading h2 {
+  font-size: 3rem;
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+.about-heading::after {
+  content: "";
+  display: block;
+  height: .3rem;
+  width: 6rem;
+  background: #000;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #fff;
+}
+
+.features div {
+  width: 20rem;
+  height: 18rem;
+  background: #04c2c9;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: .2rem;
+}
+
+.features div i {
+  font-size: 5rem;
+}
+
+.features div h3 {
+  font-size: 2rem;
+  color: #616161;
+  font-family: "Raleway-bold";
+}
+
+.features div p {
+  font-size: 1.3rem;
+  margin-top: 1.2rem;
+  line-height: 1.5;
+}
+
+.self-img {
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+          clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  width: 20rem;
+  min-height: 20rem;
+  background: url(./images/self.jpg);
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.self-text h3 {
+  font-size: 2rem;
+  color: #616161;
+  font-family: "Raleway-bold";
+}
+
+.self-text p {
+  font-size: 1.3rem;
+  margin-top: 1.2rem;
+  line-height: 1.5;
+}
+
+.skill-main h2 {
+  font-size: 3rem;
+  letter-spacing: .2rem;
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+.skill-main h2::after {
+  content: "";
+  display: block;
+  height: .3rem;
+  width: 7rem;
+  background: #000;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .html {
+  width: 20rem;
+  height: 20rem;
+  background-color: orange;
+  font-size: 9rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin: 1.5rem 2.5rem;
+}
+
+.skills .html p {
+  font-size: 2rem;
+}
+
+.skills .css {
+  width: 20rem;
+  height: 20rem;
+  background-color: #1E90FF;
+  font-size: 9rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin: 1.5rem 2.5rem;
+}
+
+.skills .css p {
+  font-size: 2rem;
+}
+
+.skills .js {
+  width: 20rem;
+  height: 20rem;
+  background-color: #FFD700;
+  font-size: 9rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin: 1.5rem 2.5rem;
+}
+
+.skills .js img {
+  height: 7rem;
+  width: 7rem;
+  margin-bottom: 1rem;
+}
+
+.skills .js p {
+  font-size: 2rem;
+}
+
+.skills .jquery {
+  width: 20rem;
+  height: 20rem;
+  background-color: #483D8B;
+  font-size: 9rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin: 1.5rem 2.5rem;
+}
+
+.skills .jquery img {
+  height: 7rem;
+  width: 7rem;
+  margin-bottom: 1rem;
+}
+
+.skills .jquery p {
+  font-size: 2rem;
+}
+
+.skills .bs {
+  width: 20rem;
+  height: 20rem;
+  background-color: #800080;
+  font-size: 9rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin: 1.5rem 2.5rem;
+}
+
+.skills .bs img {
+  height: 7rem;
+  width: 7rem;
+  margin-bottom: 1rem;
+}
+
+.skills .bs p {
+  font-size: 2rem;
+}
+
+.skills .sass {
+  width: 20rem;
+  height: 20rem;
+  background-color: #FF69B4;
+  font-size: 9rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin: 1.5rem 2.5rem;
+}
+
+.skills .sass img {
+  height: 7rem;
+  width: 7rem;
+  margin-bottom: 1rem;
+}
+
+.skills .sass p {
+  font-size: 2rem;
+}
+
+.skills .git {
+  width: 20rem;
+  height: 20rem;
+  background-color: #FF4500;
+  font-size: 9rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin: 1.5rem 2.5rem;
+}
+
+.skills .git img {
+  height: 7rem;
+  width: 7rem;
+  margin-bottom: 1rem;
+}
+
+.skills .git p {
+  font-size: 2rem;
+}
+
+.project-main {
+  font-size: 3rem;
+}
+
+.project-main::after {
+  content: "";
+  display: block;
+  height: .3rem;
+  width: 10rem;
+  background: #000;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.project {
+  position: relative;
+  width: 25rem;
+  height: 22rem;
+  overflow: hidden;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  padding: .5rem;
+  margin: 1rem;
+}
+
+.project:hover .visit {
+  top: 0%;
+}
+
+.project button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.project button:hover a {
+  color: #fff;
+}
+
+.project button a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  -webkit-transform: all .5s;
+          transform: all .5s;
+}
+
+.project .visit {
+  position: absolute;
+  overflow: hidden;
+  top: -100%;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 100;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.contact-main h3 {
+  font-size: 3rem;
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+.contact-main h3::after {
+  content: "";
+  display: block;
+  height: .3rem;
+  width: 8rem;
+  background: #000;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#contact {
+  position: relative;
+}
+
+.jumbotron {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.jumbotron input, .jumbotron textarea {
+  display: block;
+  padding: 1rem;
+  margin-top: .5rem;
+  outline: none !important;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.jumbotron input::-webkit-input-placeholder, .jumbotron textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.4rem;
+}
+
+.jumbotron input:-ms-input-placeholder, .jumbotron textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.4rem;
+}
+
+.jumbotron input::-ms-input-placeholder, .jumbotron textarea::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.4rem;
+}
+
+.jumbotron input::placeholder, .jumbotron textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.4rem;
+}
+
+.jumbotron #submit {
+  font-size: 1.3rem;
+}
+
+.top-arrow {
+  position: absolute;
+  bottom: -4%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.top-arrow i {
+  background: #04c2c9;
+}
+
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+  .html, .css, .js, .jquery, .bs, .sass, .git {
+    padding: 0 !important;
+    margin: .5rem 0 !important;
+  }
+  .project {
+    width: 20rem;
+    height: 18rem;
+  }
+}
+@media only screen and (max-width: 350px){
+  html {
+    font-size: 40%;
+  }
+}
