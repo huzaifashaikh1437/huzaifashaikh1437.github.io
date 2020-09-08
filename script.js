@@ -5,4 +5,10 @@ let bottomBtn = document.querySelector(".top-arrow");
 bottomBtn.addEventListener('click', function(){
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
-})
+});
+ 
+let loader = document.querySelector("#loader");
+
+function animationHidde(){
+    loader.style.display = "none";
+}
